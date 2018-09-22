@@ -1,0 +1,348 @@
+[
+    {
+        "key": "group_5ba2f7e0a8808",
+        "title": "TY Page",
+        "fields": [
+            {
+                "key": "field_5ba30547ec5dc",
+                "label": "Three JS HTML",
+                "name": "three_js_html",
+                "type": "text",
+                "instructions": "The name of a Three JS HTML file placed in the *[theme-path]\/three* directory.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5ba3dc50e69e6",
+                "label": "Content Top",
+                "name": "content_top",
+                "type": "true_false",
+                "instructions": "If checked, the content in the Home Page's WYSIWYG will appear above any Three animation present, making it clickable (useful for links).",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_5ba41019826a4",
+                "label": "Image Link Array",
+                "name": "image_link_array",
+                "type": "group",
+                "instructions": "If activated, allows user to create an array\/grid of images with attached links.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5ba411e3826a5",
+                        "label": "Enable?",
+                        "name": "enable",
+                        "type": "true_false",
+                        "instructions": "If checked, array\/grid will display.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 0,
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    },
+                    {
+                        "key": "field_5ba4124b826a7",
+                        "label": "Items",
+                        "name": "items",
+                        "type": "repeater",
+                        "instructions": "The items in the array.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "table",
+                        "button_label": "",
+                        "sub_fields": [
+                            {
+                                "key": "field_5ba41273826a8",
+                                "label": "Title",
+                                "name": "title",
+                                "type": "text",
+                                "instructions": "Item title (optional)",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5ba41288826a9",
+                                "label": "Image",
+                                "name": "image",
+                                "type": "image",
+                                "instructions": "The image to be displayed (required).",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "array",
+                                "preview_size": "thumbnail",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            },
+                            {
+                                "key": "field_5ba412ba826aa",
+                                "label": "Link",
+                                "name": "link",
+                                "type": "link",
+                                "instructions": "Link (required)",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "array"
+                            },
+                            {
+                                "key": "field_5ba41bfebf5db",
+                                "label": "Alt Text",
+                                "name": "alt_text",
+                                "type": "text",
+                                "instructions": "Alt text (not required).",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "field_5ba4531eaa12a",
+                "label": "Event List",
+                "name": "event_list",
+                "type": "group",
+                "instructions": "List of events.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5ba4537faa12b",
+                        "label": "Enable?",
+                        "name": "enable",
+                        "type": "true_false",
+                        "instructions": "If checked, event list will display.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 0,
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    },
+                    {
+                        "key": "field_5ba453b0aa12c",
+                        "label": "Events",
+                        "name": "events",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "table",
+                        "button_label": "",
+                        "sub_fields": [
+                            {
+                                "key": "field_5ba453c2aa12d",
+                                "label": "Date & Time",
+                                "name": "date_time",
+                                "type": "date_time_picker",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "display_format": "m\/d\/Y g:i a",
+                                "return_format": "m\/d\/Y g:i a",
+                                "first_day": 1
+                            },
+                            {
+                                "key": "field_5ba45413aa12e",
+                                "label": "Event Name",
+                                "name": "event_name",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5ba4542daa12f",
+                                "label": "Link",
+                                "name": "link",
+                                "type": "link",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "array"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "field_5ba58003b4aca",
+                "label": "Flex Center Content?",
+                "name": "flex_center_content",
+                "type": "true_false",
+                "instructions": "If this is checked, the content of the page will be centered in the content area. \r\n\r\nIMPORTANT: This could be problematic if the default content is too tall.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_5ba585cd9f306",
+                "label": "Fixed Footer?",
+                "name": "fixed_footer",
+                "type": "true_false",
+                "instructions": "If checked, the footer will be fixed to the bottom of the view port.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                },
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-templates\/ty-default.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]
