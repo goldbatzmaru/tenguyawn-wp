@@ -1,0 +1,28 @@
+<html lang="en">
+	<head>
+		<style>
+			html,
+			body,
+			div {
+				height: 100%; // Passes through the height of the parent iframe element
+				background-color: #fff;
+			}
+			div {
+				// Magic to prevent iOS growing the iFrame to fit the content.
+				// This container will mimic the behavior of the iframe on a desktop browser
+				-webkit-overflow-scrolling:touch;
+				overflow: hidden;
+				cursor:pointer;
+			}
+			body{
+				margin:0;
+				overflow:hidden;
+			}
+		</style>
+	</head>
+	<body cz-shortcut-listen="true">
+		<script src="three.min.js"></script>
+		<script src="Detector.js"></script>
+		<script src="new2.js"></script>
+	</body>
+</html>
