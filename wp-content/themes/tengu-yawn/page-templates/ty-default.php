@@ -39,7 +39,9 @@ $three_path = $theme_path . '/three/';
 					<?php while ( have_posts() ) : the_post(); ?>
 						<div class='ty-content <?php if($contentTop): ?>content-top<?php endif; ?> <?php if($flexCenterContent): ?>acf-active<?php endif; ?>'>
 							<!-- General Content -->
-							<?php the_content(); ?>
+							<div id="general-content">
+								<?php the_content(); ?>
+							</div>
 							<!-- Image Link Array -->
 							<?php if( $image_link_array &&  ($image_link_array['enable'] == true) ): ?>
 
@@ -52,8 +54,17 @@ $three_path = $theme_path . '/three/';
 								<?php include 'acf-modules/event-list.php'; ?>
 
 							<?php endif; ?>
-							<!-- Three JS Animation Background -->
-							<?php if($threeJs){echo '<iframe src="' . $three_path . $threeJs . '"></iframe>';}?>
+							<?php if($threeJs){
+								// Three JS Animation Background
+								wp_register_script( 'animation', $three_path . $threeJs . '.js' );
+							    wp_localize_script( 'animation', 'animation_data',
+							      array( 
+							          'texture_path' => $three_path . '/textures'
+							      )
+							    );
+								wp_enqueue_script( 'animation');
+								echo '<div id="background-animation"></div>';
+							}?>
 
 							<?php 
 							  if(!$fixedFooter){

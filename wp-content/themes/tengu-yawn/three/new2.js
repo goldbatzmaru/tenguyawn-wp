@@ -22,17 +22,12 @@ if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 				camera.add( pointLight );
 				scene.add( camera );
 
-
-
-
-
-
 			    var diameter = 75;
 			    var radialSegments = 64;
 			    var geometry = new THREE.CylinderGeometry( diameter, diameter, 5, radialSegments );
 			    
-			    var medal = "textures/tgyn_medal.jpg";
-			    var gold = "textures/gold.jpg";
+			    var medal = animation_data.texture_path + "/tgyn_medal.jpg";
+			    var gold = animation_data.texture_path + "/gold.jpg";
 
 			    var texture1 = new THREE.TextureLoader().load( medal );
 			    var texture2 = new THREE.TextureLoader().load( gold );
@@ -149,7 +144,8 @@ if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 				renderer.setPixelRatio( window.devicePixelRatio );
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				renderer.setClearColor( 0x000000, 0 );
-				document.body.appendChild( renderer.domElement );
+				renderer.domElement.id = 'ty-canvas';
+				document.getElementById('background-animation').appendChild( renderer.domElement );
 
 				//
 
