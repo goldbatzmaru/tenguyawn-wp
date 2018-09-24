@@ -38,19 +38,23 @@ $three_path = $theme_path . '/three/';
 
 					<?php while ( have_posts() ) : the_post(); ?>
 						<div class='ty-content <?php if($contentTop): ?>content-top<?php endif; ?> <?php if($flexCenterContent): ?>acf-active<?php endif; ?>'>
-							<!-- General Content -->
-							<div id="general-content">
-								<?php the_content(); ?>
-							</div>
-							<!-- Image Link Array -->
-							<?php if( $image_link_array &&  ($image_link_array['enable'] == true) ): ?>
 
+							<?php if(get_the_content() != ''): ?>
+								<!-- General Content -->
+								<div id="general-content">
+									<?php the_content(); ?>
+								</div>
+							<?php endif; ?>
+							
+							
+							<?php if( $image_link_array &&  ($image_link_array['enable'] == true) ): ?>
+								<!-- Image Link Array -->
 								<?php include 'acf-modules/image-link-array.php'; ?>
 
 							<?php endif; ?>
-							<!-- Event List -->
+							
 							<?php if( $events &&  ($events['enable'] == true) ): ?>
-
+								<!-- Event List -->
 								<?php include 'acf-modules/event-list.php'; ?>
 
 							<?php endif; ?>

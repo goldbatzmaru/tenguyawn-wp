@@ -17,6 +17,8 @@ body {
 .ty-content.acf-active {
   align-items: center;
   justify-content: center;
+  height: auto;
+  overflow: initial;
 }
 
 main {
@@ -178,10 +180,10 @@ a {
         }
       }
       .image-link-array {
-        padding: 10% 20%;
+        padding: 10% 20% 5%;
         align-self: flex-start;
         @media (max-width: 767px) {
-          padding: 0 20% 10%;
+          padding: 5% 20% 10%;
         }
         .item-wrapper {
           margin: 0 auto;
