@@ -10813,9 +10813,7 @@ body {
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  height: auto;
-  overflow: initial; }
+          justify-content: center; }
 
 main {
   position: relative; }
