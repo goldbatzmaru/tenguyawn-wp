@@ -11002,7 +11002,8 @@ a {
       margin: 0;
       padding: 0; }
       .ty-default #content .ty-content #background-animation canvas {
-        width: 100% !important; }
+        width: 100% !important;
+        height: 100% !important; }
 
 @-webkit-keyframes colorchange {
   0% {
