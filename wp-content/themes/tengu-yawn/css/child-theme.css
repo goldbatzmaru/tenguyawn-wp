@@ -10974,7 +10974,8 @@ a {
       .ty-default #content .ty-content .events-list .event {
         margin-bottom: 10px; }
     .ty-default #content .ty-content .content-top {
-      z-index: 100; }
+      z-index: 100;
+      position: relative; }
     .ty-default #content .ty-content .message {
       text-align: center; }
       .ty-default #content .ty-content .message.very-large {

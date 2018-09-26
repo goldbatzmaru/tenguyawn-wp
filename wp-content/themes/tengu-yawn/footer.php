@@ -13,11 +13,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 $container = get_theme_mod( 'understrap_container_type' );
 $fixedFooter = get_field('fixed_footer');
+$contentTop = get_field('content_top');
 ?>
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<div class="wrapper<?php if($fixedFooter): ?> fixed<?php endif; ?>" id="wrapper-footer">
+<div class="wrapper<?php if($fixedFooter): ?> fixed<?php endif; ?><?php if($contentTop): ?> content-top<?php endif; ?>" id="wrapper-footer">
 
 	<footer class="site-footer" id="colophon">
 

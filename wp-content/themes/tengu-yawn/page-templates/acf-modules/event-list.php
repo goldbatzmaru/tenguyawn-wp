@@ -6,8 +6,8 @@
  $ec = 1;
 ?>
 
-<div class="container">
-	<ul class="events-list <?php if($contentTop): ?> content-top<?php endif; ?>">
+<div class="container <?php if($contentTop): ?> content-top<?php endif; ?>">
+	<ul class="events-list">
 
 		<?php foreach($events as $event): 
 			$date_time = $event['date_time'];
