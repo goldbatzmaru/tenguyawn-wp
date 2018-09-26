@@ -1,6 +1,7 @@
 <?php
 
  $image_link_array = get_field('image_link_array');
+ $contentTop = get_field('content_top');
  $items = $image_link_array['items'];
  $contentArray = [];
  $itemsCount = count($items);
@@ -11,7 +12,7 @@
 
 ?>
 
-<div class="image-link-array">
+<div class="image-link-array <?php if($contentTop): ?> content-top<?php endif; ?>">
     <div class="container">
         <?php foreach($image_link_array['items'] as $item){ 
 

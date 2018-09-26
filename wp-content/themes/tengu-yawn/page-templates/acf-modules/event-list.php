@@ -1,12 +1,13 @@
 <?php
 
  $events = get_field('event_list')['events'];
+ $contentTop = get_field('content_top');
  $eventCount = count($events);
  $ec = 1;
 ?>
 
 <div class="container">
-	<ul class="events-list">
+	<ul class="events-list <?php if($contentTop): ?> content-top<?php endif; ?>">
 
 		<?php foreach($events as $event): 
 			$date_time = $event['date_time'];
