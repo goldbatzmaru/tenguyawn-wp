@@ -37,11 +37,11 @@ $three_path = $theme_path . '/three/';
 				<main class="site-main" id="main" role="main">
 
 					<?php while ( have_posts() ) : the_post(); ?>
-						<div class='ty-content <?php if($contentTop): ?>content-top<?php endif; ?> <?php if($flexCenterContent): ?>acf-active<?php endif; ?>'>
+						<div class='ty-content <?php if($flexCenterContent): ?>acf-active<?php endif; ?>'>
 
 							<?php if(get_the_content() != ''): ?>
 								<!-- General Content -->
-								<div id="general-content">
+								<div id="general-content" <?php if($contentTop): ?>class="content-top"<?php endif; ?>>
 									<?php the_content(); ?>
 								</div>
 							<?php endif; ?>
