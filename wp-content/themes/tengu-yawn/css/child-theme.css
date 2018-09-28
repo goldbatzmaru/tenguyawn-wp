@@ -10923,7 +10923,9 @@ a {
     position: fixed;
     bottom: 0; }
   #wrapper-footer #copyright {
-    font-size: 12px; }
+    font-size: 12px;
+    font-family: 'Cormorant SC',sans-serif;
+    letter-spacing: 1px; }
 
 .ty-default {
   padding: 0; }
@@ -11003,8 +11005,8 @@ a {
       margin: 0;
       padding: 0; }
       .ty-default #content .ty-content #background-animation canvas {
-        width: 100% !important;
-        height: 100% !important; }
+        width: 100vw !important;
+        height: 100vh !important; }
 
 @-webkit-keyframes colorchange {
   0% {

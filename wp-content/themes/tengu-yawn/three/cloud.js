@@ -10,7 +10,7 @@ function init() {
     scene = new THREE.Scene();
     scene.fog = new THREE.FogExp2( 0x49f0ff, 0.25 );
  
-    camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
+    camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 2000 );
     camera.position.z = 1250;
     scene.add( camera );
  
@@ -41,10 +41,13 @@ function init() {
     }
  
     renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true } );
+    renderer.setPixelRatio( window.devicePixelRatio );
     renderer.setSize( window.innerWidth, window.innerHeight );
     renderer.setClearColor( 0x00ffff, 0 );
     renderer.domElement.id = 'ty-canvas';
     document.getElementById('background-animation').appendChild( renderer.domElement );
+
+    window.addEventListener( 'resize', onWindowResize, false );
  
 }
  
@@ -55,6 +58,15 @@ function animate() {
     requestAnimationFrame( animate );
     evolveSmoke();
     render();
+}
+
+function onWindowResize() {
+
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize( window.innerWidth, window.innerHeight );
+
 }
  
 function evolveSmoke() {

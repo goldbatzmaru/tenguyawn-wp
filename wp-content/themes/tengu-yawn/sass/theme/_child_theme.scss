@@ -138,6 +138,8 @@ a {
   }
   #copyright {
     font-size: 12px;
+    font-family: 'Cormorant SC',sans-serif;
+    letter-spacing: 1px;
   }
 }
 .ty-default {
@@ -243,8 +245,8 @@ a {
        margin: 0;
        padding: 0;
        canvas {
-        width: 100% !important;
-        height: 100% !important;
+        width: 100vw !important;
+        height: 100vh !important;
        }
       }
     }
